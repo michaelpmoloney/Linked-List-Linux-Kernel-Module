@@ -14,6 +14,15 @@ log buffer everytime an element is deleted.
 
 Instruction: 
 
+1. Put Makefile and simple-solution.c in the same directory
+2. Change directory in the command line to that directory
+3. Type "make" in the command line to use the Makefile to compile simple-solution.c into a kernel module
+The created file simple-solution.ko represents the compiled kernel module
+4. type "sudo insmod simple-solution.ko" into the comman line to load the kernel module
+5. To check whether the module has loaded, enter the lsmod command and search for the module simple-solution
+6. To check the contents of the kernel's output message enter "dmesg" into the command line.
+7. To remove the kernel module enter "sudo rmmod simple-solution" into the command line.
+
 /********************************************************************************************************/
 
 Output of program:
